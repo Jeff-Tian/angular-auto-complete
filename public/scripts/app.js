@@ -1,5 +1,5 @@
 angular.module('angular-auto-complete', [])
-    .factory('autocomplete', ['$http', '$q', function ($http, $q) {
+    .directive('autoComplete', ['$http', '$q', function ($http, $q) {
         function getData(source, $scope) {
             if (source.indexOf('http://') >= 0 || source.indexOf('https://') >= 0 || source.indexOf('//') >= 0) {
                 return $http.get(source);
