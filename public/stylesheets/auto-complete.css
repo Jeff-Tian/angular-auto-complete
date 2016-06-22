@@ -1,0 +1,19 @@
+.autocomplete-suggestions {
+    margin-left: 1px;
+    padding: .5em;
+    max-height: 12em;
+    background-color: #fff;
+    overflow: auto;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    border-radius: .28571429rem;
+    box-sizing: border-box;
+}
+
+.autocomplete-suggestions .autocomplete-suggestion {
+    padding: .5em;
+    border-radius: .28571429rem;
+}
+
+.autocomplete-suggestions .autocomplete-selected {
+    background-color: #eee;
+}
