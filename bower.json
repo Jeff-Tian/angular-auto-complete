@@ -1,0 +1,20 @@
+{
+  "name": "angular-auto-complete",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "田杰 <jefftian@hcdlearning.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Jeff-Tian/angular-auto-complete",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "devbridge-autocomplete": "https://github.com/devbridge/jQuery-Autocomplete.git#^1.2.25"
+  }
+}
