@@ -40,3 +40,4 @@ jspm_packages
 
 .idea
 public/bower_components
+dist/bower_components
