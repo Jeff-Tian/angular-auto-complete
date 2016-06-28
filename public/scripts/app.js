@@ -5,6 +5,7 @@ angular.module('angular-auto-complete', [])
                 function setupAutoComplete(data) {
                     $(element).autocomplete({
                         lookup: data,
+                        minChars: attrs.minChars || 1,
                         onSelect: function (suggestion) {
                             var ngModelString = $(this).attr('ng-model');
                             var a = ngModelString.split('.');
