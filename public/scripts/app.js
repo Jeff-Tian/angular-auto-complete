@@ -16,7 +16,7 @@ angular.module('angular-auto-complete', [])
                 }
 
                 function getData(source, $scope) {
-                    if (source.indexOf('http://') >= 0 || source.indexOf('https://') >= 0 || source.indexOf('//') >= 0) {
+                    if (source.indexOf('http://') === 0 || source.indexOf('https://') === 0 || source.indexOf('//') === 0 || source.indexOf('/') === 0) {
                         return $http.get(source);
                     } else {
                         $scope.$watch(source, function () {
