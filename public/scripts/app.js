@@ -30,7 +30,9 @@ angular.module('angular-auto-complete', [])
 
                 if (url) {
                     getData(url, scope)
-                        .then(setupAutoComplete);
+                        .then(function (xhr) {
+                            setupAutoComplete(xhr.data);
+                        });
                 }
             }
         };
